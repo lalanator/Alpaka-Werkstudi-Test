@@ -25,10 +25,11 @@
             </div>
         </div>
     </nav>
+
     <!--header section-->
     <section class="bg-white w-1392 mx-auto mt-4 p-4 relative">
         <img src="imgs/header-bg-img.jpeg" alt="Image" class="w-full h-auto" />
-        <!--TODO change inset to dynamic-center instead of hardcoded-->
+        <!--TODO resize text and button when resizing website-->
         <div class="absolute inset-0 justify-center text-center mt-4 pt-64">
           <h1 class="text-6xl text-white font-sans font-bold pb-2">The start of a great <br> adventure.</h2>
           <p class="w-608 text-white font-sans font-bold mt-4 pb-6 px-96">Porta dui sed mattis odio cras integer sapien proin diam. Malesuada purus bibendum nulla libero ut etiam ut. Amet odio felis gravida porta accumsan arcu. Libero neque mi vestibulum habitant neque sagittis venenatis.</p>
@@ -39,19 +40,29 @@
         </svg>
         </div>
       </section>
+
       <!--our products-->
-      <section class="bg-white items-center mx-auto mt-4 px-104">
-        <h2 class="leading-10 font-sans font-normal justify-center text-center">Our Products</h2>
-        <div class="flex mx-auto">
-            <div style="background-color: #004587;">
-                <img src="dist\imgs\product.png" alt="Product" class="w-368 h-168 px-4 pb-6">
+      <section class="bg-white">
+        <div class="mt-4 mx-24 px-104">
+            <h2 class="leading-10 font-normal text-3xl text-left">Our Products</h2>
+            <div class="flex mx-auto space-x-4 py-4 px-104">
+                <div class=" flex-1 h-1232 w-186 rounded-lg" style="background-color: #004587;">
+                    <img src="imgs\product.png" alt="Product" class="w-368 h-168 px-4 pb-6">
+                    <p class="leading-6 font-sans font-bold text-white text-left text-xl w-368 px-4 pb-2">Product G</p>
+                    <p class="font-sans font-light text-white text-left text-sm px-4 pb-6">A diam dolor gravida eu et nibh morbi at nullam. Enim urna quis vitae arcu donec purus. Faucibus iaculis at duis pulvinar eget. Ipsum ut cras magna.</p>
+                </div>
+                <div class="flex-1 h-1232 w-186 rounded-lg" style="background-color: #009CC4;">
+                    <img src="imgs\product.png" alt="Product" class="w-368 h-168 px-4 pb-6">
+                    <p class="leading-6 font-sans font-bold text-white text-left text-xl w-368 px-4 pb-2">Product F</p>
+                    <p class="font-sans font-light text-white text-left text-sm px-4 pb-6">Nec eget dui pulvinar ut at neque duis. Integer ligula donec vel risus malesuada sed id faucibus. Sed cursus morbi egestas tincidunt metus ipsum.</p>
+                </div>
+                <div class="flex-1 h-1232 w-186 rounded-lg" style="background-color: #FBB900; ">
+                    <img src="imgs\product.png" alt="Product" class="w-368 h-168 px-4 pb-6">
+                    <p class="leading-6 font-sans font-bold text-white text-left text-xl w-368 px-4 pb-2">Product A</p>
+                    <p class="font-sans font-light text-white text-left text-sm px-4 pb-6">Tellus tellus nibh duis scelerisque nibh consequat. Volutpat consectetur maecenas volutpat odio. Vulputate nisl morbi et scelerisque cras. Non et.</p>
+                </div>
             </div>
-            <div style="background-color: #009CC4;">
-                <img src="dist\imgs\product.png" alt="Product" class="px-4 pb-6">
-            </div>
-            <div style="background-color: #FBB900;">
-                <img src="dist\imgs\product.png" alt="Product" class="px-4 pb-6">
-            </div>
+            <p class="leading-6 text-right" style="text-decoration-line: underline;">Show all</p>
         </div>
       </section>
 </body>
