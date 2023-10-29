@@ -759,6 +759,10 @@ video {
   margin-left: calc(10rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.text-clip {
+  text-overflow: clip;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -891,6 +895,10 @@ video {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .align-middle {
   vertical-align: middle;
 }
@@ -912,6 +920,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
@@ -950,6 +963,10 @@ video {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-current {
+  color: currentColor;
 }
 
 .underline {
