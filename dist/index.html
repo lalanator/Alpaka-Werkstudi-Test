@@ -9,10 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
+
 <body>
+    <!--For Future Notice: refactor text-presets for headlines, buttons, paragraph, etc.-->
+    
     <nav> <!--Menu Bar-->
         <div id="MenuBar" class="w-1232 mx-auto py-2 px-104 border-b">
-            <div class="flex bg-white justify-between items-center h-16 px-16">
+            <div class="flex bg-white justify-between items-center" style="height: 88px; padding-left: 104px; padding-right: 104px;">
                 <!--logo-->
                 <img class="pr-2.75 w-31.75 h-8" src="imgs/logoipsum-297 1.svg" alt="image logoips"/>
                 <div class="py-8">
@@ -27,7 +30,7 @@
     </nav>
 
     <!--Header-->
-    <section class="bg-white w-1392 mx-auto mt-4 p-4 relative">
+    <section class="bg-white w-1392 mx-auto mt-6 px-6 relative">
         <!--TODO text over image has to scale-->
         <img src="imgs/header-bg-img.jpeg" alt="Image" class="w-full h-auto" />
         <div class="absolute inset-0 justify-center text-center mt-4 pt-64">
@@ -39,11 +42,10 @@
       </section>
 
       <!--Our Products-->
-      <section class="bg-white">
-        <div class="my-10" style="padding-left: 104px; padding-right: 104px;">
+      <section class="bg-white" style="padding-left: 104px; padding-right: 104px;">
+        <div class="my-10">
             <h2 class="leading-10 font-normal text-3xl text-left">Our Products</h2>
             <div class="flex space-x-4 py-4">
-                <!--nice-to-have: refactor hardcoded text into presets + center images when zooming-->
                 <div class="flex-1 rounded-lg" style="background-color: #004587;">
                     <img src="imgs\product.png" alt="Product" class="w-368 h-168 px-4 pb-6">
                     <p class="leading-6 font-bold text-white text-left text-xl w-368 px-4 pb-2">Product G</p>
@@ -83,20 +85,19 @@
       </section>
 
       <!--Blog-->
-      <section class="bg-white mx-10  style="padding-left: 104px; padding-right: 104px;">
+      <section class="bg-white mx-10"  style="padding-left: 104px; padding-right: 104px;">
         <h2 class="font-light text-3xl text-center mb-4">Blog</h2>
         <p class="font-extralight text-center">Diam enim suscipit habitant ac nunc arcu commodo pulvinar massa. <br> Odio pellentesque fusce elit facilisi risus blandit dictum turpis erat. A vestibulum sed scelerisque quis in.</p>
-        <!--Navbar-->
-        <div class="flex mb-4 mt-10 justify-start" style="padding-left: 104px; padding-right: 104px;">
+        <!--Buttons-->
+        <div class="flex mb-4 mt-10">
             <button class="rounded-full px-4 py-2 font-bold mx-2" style="background-color: #f2f2f2;">Show all</button>
             <button class="rounded-full px-4 py-2 font-bold mx-2" style="background-color: #f2f2f2;">City</button>
             <button class="rounded-full px-4 py-2 font-bold mx-2 border border-gray-900" style="background-color: #f2f2f2;">Forest</button>
             <button class="rounded-full px-4 py-2 font-bold mx-2" style="background-color: #f2f2f2;">Water</button>
         </div>
         <!--Forest Images-->
-        <!--TODO: spacing between images to also align with product section (resize?!)-->
-        <!--TODO buttons over image have to scale-->
-        <div class="flex mb-10" style="padding-left: 104px; padding-right: 104px;">
+        <!--TODO: spacing between images to also align with product section (padding 104px)-->
+        <div class="flex mb-10">
             <div class="flex-1 relative text-center">
                 <img src="imgs/blog-1.png" class="rounded-lg">
                 <a href="#" class=" absolute bottom-12 left-20 rounded-full px-6 py-3 font-bold" style="background-color: #f2f2f2; font-size: 15px;">Lorem Ipsum</a>
@@ -117,20 +118,21 @@
     </section>
 
     <!--Sea Section-->
-    <section>
-        <div class="flex my-10 rounded-lg mx-24" style="background-color: #009CC4;">
+    <section style="padding-left: 104px; padding-right: 104px;">
+        <div class="flex my-10 rounded-lg" style="background-color: #009CC4;">
             <div class="relative text-white my-10 mx-8">
                 <h2 class="font-normal inset-10 mb-4" style="font-size: 32px;">Enim nulla facilisis viverra lobortis</h2>
                 <p class="font-normal inset-6 mb-auto">Lectus orci lectus in leo vel a. Venenatis sagittis nunc fermentum urna morbi. Sed luctus mi vulputate posuere quis. Amet dolor rhoncus tincidunt porta faucibus lorem in integer et.</p>
                 <a href="#" class="absolute bottom-0 bg-white font-bold text-center text-gray-900 rounded-full px-6 py-3 ">Read more</a>
             </div>
+            <!--TODO resize fit of image to take 2/3-->
             <img src="imgs/sea.png" class="w-fit rounded-r-lg" />
         </div>
     </section>
     
     <!--Highlights-->
-    <section>
-        <div class="flex my-10 text-center" style="padding-left: 104px; padding-right: 104px;">
+    <section style="padding-left: 104px; padding-right: 104px;">
+        <div class="flex my-10 text-center">
             <div id="Germany" class="rounded-lg p-10 mr-4" style="background-color: #F2F2F2;">
                 <div class="inline-flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
